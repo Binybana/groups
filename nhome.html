@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="scri"></script>
+        <script src="script.js"></script>
         <title>home page</title>
     </head>
     <body>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="regestrarion">
-                <form> 
+                <form onsubmit="return validate()"> 
                     <div class="reg" >
                         <input class="box" type="text" placeholder="Full name" id="name" required>
                         <input class="box" type="email" placeholder="Email / Phone" id="mail" required>
@@ -60,8 +60,9 @@
                         </select>
                         
                     </div>
+                    <input type="submit" value="Register" class="btn">
                 </form>
-                <a><button class="btn">Register</button></a>   
+               
             </div>
             <div class="sign">
                 <h3>YOUR SATISFACTION IS OUR PRIDE</h3>
